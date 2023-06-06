@@ -1,66 +1,62 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Signup Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<form method="POST" action="./script.js">
-  <div>
-    <label for="name">Name*</label>
-    <input type="text" id="name" name="name" placeholder="Name" required>
-  </div>
-  <div>
-    <label for="email">Email*</label>
-    <input type="email" id="email" name="email" placeholder="Email" required>
-  </div>
-  <div>
-    <label>Gender*</label><br>
-    <label for="gender_m">Male</label>
-    <input type="radio" id="gender_m" name="gender" required>
-    <label for="gender_f">Female</label>
-    <input type="radio" id="gender_f" name="gender" required>
-  </div>
-  <div>
-    <label for="cars">Car Brands*</label>
-    <select id="cars" name="cars" required>
-      <option value="" disabled selected>--Please choose an option--</option>
-      <option value="BMW">BMW</option>
-      <option value="Audi">Audi</option>
-      <option value="Mercedez">Mercedez</option>
-    </select>
-  </div>
-  <div>
-    <label for="age">Age*</label>
-    <input type="number" id="age" name="age" placeholder="Age" required>
-  </div>
-  <div>
-    <label for="dob">DOB*</label>
-    <input type="date" id="dob" name="dob" required>
-  </div>
-  <div>
-    <label for="tel">Phone Number</label>
-    <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
-  </div>
-  <div>
-    <label for="password">Password*</label>
-    <input type="password" id="password" name="password" placeholder="Password" required>
-  </div>
-  <div>
-    <input type="checkbox" id="tos" name="tos" required>
-    <label for="tos">I agree to the TOS</label>
-  </div>
-  <div>
-    <button type="submit">Submit</button>
-  </div>
-</form>
-
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <h1>Signup Form</h1>
+  <form method="post" action="#" id="signup-form">
+    <div>
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" placeholder="Name" required>
+    </div>
+    <div>
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+    <div>
+      <label>Gender*</label>
+      <div>
+        <input type="radio" id="gender_m" name="gender" value="male" required>
+        <label for="gender_m">Male</label>
+      </div>
+      <div>
+        <input type="radio" id="gender_f" name="gender" value="female" required>
+        <label for="gender_f">Female</label>
+      </div>
+    </div>
+    <div>
+      <label for="cars">Car Brands*</label>
+      <select id="cars" name="cars" required>
+        <option value="" disabled selected>--Please choose an option--</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+      </select>
+    </div>
+    <div>
+      <label for="age">Age*</label>
+      <input type="number" id="age" name="age" placeholder="Age" required>
+    </div>
+    <div>
+      <label for="dob">DOB*</label>
+      <input type="date" id="dob" name="dob" placeholder="DOB" required>
+    </div>
+    <div>
+      <label for="tel">Phone Number</label>
+      <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+    </div>
+    <div>
+      <label for="password">Password*</label>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+    </div>
+    <div>
+      <input type="checkbox" id="tos" name="tos" required>
+      <label for="tos">I agree to the TOS</label>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
 </body>
-
 </html>
